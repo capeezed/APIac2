@@ -1,0 +1,6 @@
+const express = require('express')
+const app = express()
+const professoresRouter = require('./routes/professores')
+app.use(express.json())
+app.use('/professores', professoresRouter)
+app.listen(3000)
